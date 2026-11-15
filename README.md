@@ -88,27 +88,6 @@ jupyter notebook ecg_two_stage_framework.ipynb
 
 Run all cells top to bottom. Expected runtime: ~20–30 min (MOBO is the bottleneck).
 
-## Notebook Structure
-
-| Cells | Section |
-|-------|---------|
-| 0 | Title + framework overview |
-| 1–3 | Imports, data loading, beat visualization |
-| 4 | 24 TDMF feature extraction |
-| 5–7 | Triple-ranking feature selection + correlation filter |
-| 8–10 | Stage-1 RF training (5-fold CV, OOF probabilities) |
-| 11 | Stage-2 feature augmentation (14 TDMF + 3 S1 proba = 17) |
-| 12–15 | Stage-2 model comparison (RF vs XGB DART vs LGB DART) |
-| 16–17 | Full test evaluation + confusion matrices |
-| 18–20 | MOBO (40 trials, subsampled) + Pareto front + DART score |
-| 21–23 | Uncertainty gating + sensitivity analysis |
-| 24–28 | SHAP analysis (global, per-class, force, waterfall, dependence) |
-| 29 | XAI Packet generation |
-| 30 | Python latency/memory profiling |
-| 31 | ESP32-realistic edge deployment metrics |
-| 32 | Prototype distance analysis |
-| 33 | Paper-ready summary table |
-| 34 | Model saving |
 
 ## Output Structure
 
